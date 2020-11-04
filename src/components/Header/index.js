@@ -64,9 +64,9 @@ function Header() {
             </div>
             <div className="menu__body-right pl-3 col-9">
               <div className="top mt-5">
-                <a href="/">
+                <Link to="/">
                   <h4 className="item">Home</h4>
-                </a>
+                </Link>
 
                 <div className="item my-4">
                   <h4>About Us</h4>
