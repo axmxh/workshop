@@ -25,7 +25,7 @@ function AllNews({ news, catagories }) {
     from: "",
     to: "",
     query: "",
-    category: ""
+    category: null
   });
   const [sort, setSort] = useState("AtoZ");
 
@@ -33,7 +33,7 @@ function AllNews({ news, catagories }) {
     const value = e.target.value;
     // console.log("handleCategoryChange", value);
 
-    setFilters({ ...filters, category: "value" });
+    setFilters({ ...filters, category: value });
     if (filters.filtered?.length > 0) {
       setFilters({
         ...filters,
@@ -74,7 +74,7 @@ function AllNews({ news, catagories }) {
     } else {
       setSort("AtoZ");
     }
-    console.log(sort);
+    // console.log(sort);
     handleSort(sort);
   };
 
@@ -121,7 +121,7 @@ function AllNews({ news, catagories }) {
     });
   };
 
-  //   console.log("filtered", filters);
+  //   console.log("catagories", catagories);
 
   const renderNews = (news) => {
     return news?.map((item, i) => {
