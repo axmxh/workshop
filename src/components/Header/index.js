@@ -100,7 +100,11 @@ function Header() {
         {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
         {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
         <Nav className="mr-auto"></Nav>
-        <div className={`search mr-3 ${isSearchOpened ? "open" : ""}`}>
+        <div
+          className={`search mr-3 d-none d-sm-none d-md-flex ${
+            isSearchOpened ? "open" : ""
+          }`}
+        >
           <div className="input-group">
             <input
               type="text"
@@ -147,7 +151,10 @@ function Header() {
             </Dropdown.Menu>
           </Dropdown>
         </Nav>
-        <div className="user">
+        <div
+          className="user d-none d-sm-none d-md-flex
+"
+        >
           <div className="user__avatar">
             <img src={avatar} alt="avatar" />
           </div>
