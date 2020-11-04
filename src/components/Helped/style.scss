@@ -5,6 +5,10 @@
     min-height: 700px;
     background-repeat: no-repeat;  
 
+    .container{
+        max-width: 1140px !important;
+    }
+
     @media (max-width: 991px) {
         min-height: 800px;
     }

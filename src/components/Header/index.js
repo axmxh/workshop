@@ -101,7 +101,7 @@ function Header() {
         {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
         <Nav className="mr-auto"></Nav>
         <div
-          className={`search mr-3 d-none d-sm-none d-md-flex ${
+          className={`search mr-3 d-none d-sm-none d-md-none d-lg-flex ${
             isSearchOpened ? "open" : ""
           }`}
         >
