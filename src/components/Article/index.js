@@ -14,11 +14,11 @@ function Article({ id, news }) {
   //   );
 
   if (news.length > 0) console.log("getArticleById", getArticleById);
-  console.log("art", article);
+  //   console.log("art", article);
 
   useEffect(() => {
     if (news.length > 0 || article === undefined) {
-      console.log("getArticleById", getArticleById);
+      //   console.log("getArticleById", getArticleById);
       setArticle(getArticleById);
     }
   }, [article, news]);
