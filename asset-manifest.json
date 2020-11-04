@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/workshop/static/css/main.f8757d88.chunk.css",
+    "main.js": "/workshop/static/js/main.7fe13f24.chunk.js",
+    "main.js.map": "/workshop/static/js/main.7fe13f24.chunk.js.map",
+    "runtime-main.js": "/workshop/static/js/runtime-main.f0cd4ea3.js",
+    "runtime-main.js.map": "/workshop/static/js/runtime-main.f0cd4ea3.js.map",
+    "static/css/2.046848f9.chunk.css": "/workshop/static/css/2.046848f9.chunk.css",
+    "static/js/2.6d642d93.chunk.js": "/workshop/static/js/2.6d642d93.chunk.js",
+    "static/js/2.6d642d93.chunk.js.map": "/workshop/static/js/2.6d642d93.chunk.js.map",
+    "static/js/3.74deefb1.chunk.js": "/workshop/static/js/3.74deefb1.chunk.js",
+    "static/js/3.74deefb1.chunk.js.map": "/workshop/static/js/3.74deefb1.chunk.js.map",
+    "index.html": "/workshop/index.html",
+    "static/css/2.046848f9.chunk.css.map": "/workshop/static/css/2.046848f9.chunk.css.map",
+    "static/css/main.f8757d88.chunk.css.map": "/workshop/static/css/main.f8757d88.chunk.css.map",
+    "static/js/2.6d642d93.chunk.js.LICENSE.txt": "/workshop/static/js/2.6d642d93.chunk.js.LICENSE.txt",
+    "static/media/banner.de0bd500.png": "/workshop/static/media/banner.de0bd500.png",
+    "static/media/style.scss": "/workshop/static/media/cover.e9d69d08.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0cd4ea3.js",
+    "static/css/2.046848f9.chunk.css",
+    "static/js/2.6d642d93.chunk.js",
+    "static/css/main.f8757d88.chunk.css",
+    "static/js/main.7fe13f24.chunk.js"
+  ]
+}
