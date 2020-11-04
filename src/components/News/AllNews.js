@@ -31,7 +31,9 @@ function AllNews({ news, catagories }) {
 
   const handleCategoryChange = (e) => {
     const value = e.target.value;
-    setFilters({ ...filters, category: value });
+    // console.log("handleCategoryChange", value);
+
+    setFilters({ ...filters, category: "value" });
     if (filters.filtered?.length > 0) {
       setFilters({
         ...filters,
@@ -43,7 +45,6 @@ function AllNews({ news, catagories }) {
         filtered: [...news.filter((n) => n.sourceID == value)]
       });
     }
-    console.log("handleCategoryChange", e.target.value);
   };
 
   const handleQuerySearch = (e) => {
@@ -64,7 +65,7 @@ function AllNews({ news, catagories }) {
         filtered: [...news.filter((n) => n.title.includes(value))]
       });
     }
-    console.log("handleQuerySearch", value);
+    // console.log("handleQuerySearch", value);
   };
 
   const toggleSort = () => {
@@ -97,11 +98,9 @@ function AllNews({ news, catagories }) {
   };
 
   const handleToTimeChange = (date) => {
-    console.log("handleTimeChange", date);
-    //
-
+    // console.log("handleTimeChange", date);
     let slot;
-    if (filters.filtered.length > 0) {
+    if (filters.filtered?.length > 0) {
       slot = filters.filtered.filter(
         (n) =>
           dayjs(n.publishedAt).isBefore(date) &&
@@ -114,8 +113,7 @@ function AllNews({ news, catagories }) {
           dayjs(n.publishedAt).isAfter(filters.from)
       );
     }
-
-    console.log("slot", slot);
+    // console.log("slot", slot);
     setFilters({
       ...filters,
       to: date,
@@ -123,7 +121,7 @@ function AllNews({ news, catagories }) {
     });
   };
 
-  console.log("filtered", filters.filtered, typeof filters.filtered);
+  //   console.log("filtered", filters);
 
   const renderNews = (news) => {
     return news?.map((item, i) => {
@@ -162,10 +160,9 @@ function AllNews({ news, catagories }) {
         <div className="col-md-2 col-4 mb-2 options">
           <select
             onChange={handleCategoryChange}
-            defaultValue=""
+            // defaultValue=""
             value={filters.category}
-            name="type"
-            id="propertyType"
+            id="category"
           >
             <option value="">Select</option>
             {catagories?.map((category, i) => {
