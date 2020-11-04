@@ -1,0 +1,22 @@
+.article{
+    text-align: left;
+    .item__title{
+        font-size: 1.5rem;
+        font-weight:700;
+        text-transform: capitalize;
+    }
+    .article__details{
+        background: #fff;
+        .item__banner{
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .article__description{
+        color: #565960;
+    }
+    .article__empty{
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+}

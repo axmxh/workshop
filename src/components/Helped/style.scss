@@ -1,0 +1,131 @@
+.helped{
+    color: #fff;
+    background-image: url('../../images/cover.png');
+    background-size: cover;
+    min-height: 700px;
+    background-repeat: no-repeat;  
+
+    @media (max-width: 991px) {
+        min-height: 800px;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 900px;
+
+        .helped__header{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.helped__header{
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+.boxes{
+    &:first-child{
+        margin-top: 10rem;
+    }
+    &.second{
+        margin-top: -1em;
+        & > div:first-child{
+            margin-left: 12.5%;
+        }
+    }
+    .offset-lg-1{
+        margin-left: 12.5%;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        justify-content: center!important;
+        .offset-lg-1{
+            margin-left: 0.5%;
+        }
+    }
+    @media (max-width: 767px) {
+        .offset-lg-1{
+            margin-left: 0;
+        }
+        .col-6{
+            height: 15rem;
+        }
+    }
+
+    
+}
+
+.box {
+    width: 190px;
+    height: 190px;
+    // margin: 60px;
+    color: #fff;
+    /* this is your border*/
+    outline: 3px solid #fff;
+    // outline-offset: 15px;
+    /**/
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    .box__inner {
+        min-height: 160px;
+        transform: rotate(-45deg);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            &:last-child{
+                font-size: 2em;
+            }
+        }
+    }
+    &:hover{
+        outline: 3px solid #8DC043;
+        background: #8DC043;
+    }
+
+    @media (max-width: 1200px) {
+        width: 160px;
+        height: 160px;
+    }
+
+    @media (max-width: 470px) {
+        width: 120px;
+        height: 120px;
+        .box__inner{
+            min-height: 100px;
+            svg{
+                max-height: 30px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+  }
+
+  
+  
+  /* .box::before {
+    content: "";
+    display: block;
+    width: 141%;
+    height: 141%;
+    flex-shrink:0;
+    background: center/cover;
+    background-image: inherit;
+    transform: rotate(-45deg);
+  } */

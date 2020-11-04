@@ -1,0 +1,180 @@
+.item{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.item__actions{
+    text-align: right;
+    img{
+        width: 20px;
+    }
+}
+
+.item__date{
+    text-align: left;
+    margin-inline-start: 1em;
+    padding: 1em 0;
+    b{
+        color: #707070;
+    }
+}
+
+.news__header{
+    text-align: left;
+}
+
+
+// Filters 
+.news__filters{
+    text-align: left;
+    label{
+        display: block;
+    }
+
+    input{
+        border:1px solid #C0C0C0;
+        background: white;
+        border-radius: 4px;
+        padding: 20px 10px;
+        height: 66px;
+    }
+
+    .react-datepicker-wrapper {
+        position: relative;  
+        &::before{
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 10px);
+            width: 19px;
+            z-index: 1;
+            height: 21px;
+            content: "";
+            background-image: url("../../images/date.png");
+        }
+        input{
+            border:1px solid #C0C0C0;
+            background: white;
+            border-radius: 4px;
+            padding: 20px 10px;
+            width: 100%;
+        }
+    }
+
+    .search{
+        display: flex;
+        align-items: flex-end;
+        button{
+            background: #8cc043;
+            width: 90px;
+        }
+    }
+    .sort{
+        display: flex;
+        align-items: flex-end;
+        button{
+            color: #8cc043;
+            background: none;
+            height: 66px;
+            border: 0;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            svg{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .options{
+        display: flex;
+        align-items: flex-end;
+
+        select{
+            border:1px solid #C0C0C0 !important;
+            background: #fff;
+            color: #232323;
+            height: 66px;
+            border: 0;
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+
+    
+    
+    
+}
+
+.view__more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    a{
+        color: #8cc043;
+        &:hover{
+            text-decoration: none;
+        }
+        img{
+            margin-left: .5em;
+        }
+    }
+}
+
+.item__body-title{
+    text-align: left;
+    font-weight: 400;
+    height: 3.5rem;
+    // white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item__body-tags{
+    span{
+        color: #232323;
+        padding: 0.25rem 1rem;
+        background: #74747430;
+        border-radius: 5px;
+    }
+}
+    
+
+.item__body-content{
+    height: 4.5rem;
+    overflow: hidden;
+    text-overflow: initial;
+}
+
+.card{
+    height: 500px;
+    box-shadow: 2px 2px 3px #0000000f;
+    .card-img-top{
+        height: 170px;
+    }
+    .card-body{
+        text-align: left;
+    }
+}
+
+
+.pagination{
+    justify-content: center;
+    .item{
+        cursor: pointer;
+        background: #fff;
+        margin-inline-end: .5em;
+        margin-inline-end: .5em;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .9rem;
+        &.active{
+            color: #fff;
+            background: #8cc043;
+
+        }
+    }
+   
+}

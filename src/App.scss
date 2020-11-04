@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  background: #EFEFEF;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container{
+    max-width: 1360px;
+}
+
+
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    .btn{
+        background: #8DC043;
+        border: 0;
+        color: #fff;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: calc(50% - 17.5px);
+    width: 35px;
+    height: 35px;
+    opacity: .5;
+    background: #FBFBFB;
+}
+
+.carousel-control-prev {
+    left: 7%;
+}
+
+.carousel-control-next {
+    right: 7%;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("../src/images/prev.png");
+    background-size: inherit;
+}
+
+.carousel-control-next-icon{
+    background-image: url("../src/images/next.png");
+    background-size: inherit;
+}
+
+.carousel-indicators{
+    align-items: center;
+    li{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+        &.active{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
